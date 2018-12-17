@@ -1,3 +1,8 @@
+# Day 2
+### Longest Substring Without Repeating Characters
+最长不出现重复字母的子串，算法很简单，可以暴力从每个index开始都查找一遍这个子串（这是O(N^2)的复杂度），也可以打表，用前面已经打过的表来减少查找复杂度，每个下标最多会被访问一次，整体复杂度为O(N)。
+
+
 # Day 1
 ### Two Sum
 忽略了关键条件：同一个元素最多只能用一次
