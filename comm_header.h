@@ -9,6 +9,8 @@
 #include <algorithm>
 #include <sstream>
 #include <fstream>
+#include <cmath>
+#include <climits>
 #include <assert.h>
 using namespace std;
 
@@ -77,6 +79,12 @@ T input()
 	T data;
 	cin >> data;
 	return data;
+}
+
+
+bool equal(double a, double b)
+{
+	return abs(a - b) < 1e-8;
 }
 
 

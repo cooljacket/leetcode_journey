@@ -2,6 +2,10 @@
 ### ZigZag Conversion
 一开始算法没考虑清晰，而且还忽略了边界情况（numRows=1时会退化）。先设计好算法，证明好正确性，再开始写代码。
 
+### Median of Two Sorted Arrays
+算法还是比较容易想的，不过效率只超过66%的人？都已经是线性的了，还能优化吗？
+目前能想到的就是如果其中一个数组为空，另一个数组的中位数可以O(1)时空复杂度来得到！
+
 
 # Day 2
 ### Longest Substring Without Repeating Characters
