@@ -4,8 +4,10 @@ import os
 
 
 test_case_dir = 'test_cases'
+code_dir = 'codes'
+
 title = '_'.join(sys.argv[1:])
-cpp_filename = title + '.cpp'
+cpp_file = os.path.join(code_dir, title + '.cpp')
 test_case_file = os.path.join(test_case_dir, title + '.txt')
 
 if not os.path.isdir(test_case_dir):
@@ -30,7 +32,7 @@ int main()
 	return 0;
 }
 """
-with open(cpp_filename, 'a') as cpp:
+with open(cpp_file, 'a') as cpp:
 	cpp.write(cpp_content)
 
 # 创建测试文件（只是追加文件，确保重入的时候不会冲毁已写的代码）
